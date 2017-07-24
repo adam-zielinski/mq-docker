@@ -75,10 +75,14 @@ Select the JMS context
 
 ## NiFi
 
-To connect to IBM MQ from NiFi, you need the jms jars from IBm MQ (as ibm is the implementor), and to configure the different services and processors in Nifi.
+To connect to IBM MQ from NiFi, you need the jms jars from IBM MQ (as ibm is the implementor), and to configure the different services and processors in Nifi.
 
 ### JMS jar
-The jars are under `/opt/mqm/java/lib/*mqjms.jar`
+The JMS jar must match the IBM MQ server which you are targeting, so it's easier to take it from the server installation (also because it's a pain to only find them under the IBM MQ Patches site)
+
+The jar is `/opt/mqm/java/lib/*mqjms.jar`
+
+The jar can be copied to `/shared-data`, which is linked to a [host dir](Makefile#L9), or use [docker cp](https://docs.docker.com/engine/reference/commandline/cp/)
 
 ### Services and processors
 
