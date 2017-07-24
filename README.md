@@ -1,3 +1,5 @@
+[IBM MQ with NiFi](nifi-mq/README.md)
+
 [![Build Status](https://travis-ci.org/ibm-messaging/mq-docker.svg?branch=master)](https://travis-ci.org/ibm-messaging/mq-docker)
 
 # Contents
